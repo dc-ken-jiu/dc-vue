@@ -5,7 +5,6 @@ import App from './App';
 import router from './router';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import $ from 'jquery';
 import Axios from 'axios';
 import vuexStore from './store';
 import { Message } from 'element-ui';
@@ -15,7 +14,6 @@ Vue.config.productionTip = false;
 Vue.use(ElementUI);
 Vue.prototype.$http = Axios;
 Vue.prototype.$message = Message;
-window.$ = window.jquery = $;
 
 /* eslint-disable no-new */
 new Vue({
