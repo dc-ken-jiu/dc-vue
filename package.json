@@ -12,7 +12,7 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
-    "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.scss\" \"src/**/*.less\" \"src/**/*.vue\""
+    "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.less\" \"src/**/*.vue\""
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -98,13 +98,13 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+        "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*": [
-      "npm run format",
-      "git add"
+    "*.{js,jsx,ts,tsx,md,html,vue,css,scss,less,json}": [
+        "npm run format",
+        "git add"
     ]
   }
 }

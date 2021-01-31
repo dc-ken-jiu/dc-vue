@@ -22,4 +22,4 @@ new Vue({
   store: vuexStore,
   components: { App },
   template: '<App/>'
-})
+});
