@@ -1,4 +1,4 @@
-# init-templates
+# dc-vue
 
 > A Vue.js project
 
